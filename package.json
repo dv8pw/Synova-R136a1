@@ -1,0 +1,13 @@
+{
+  "name": "synova-r136a1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "test:browser:install": "PLAYWRIGHT_BROWSERS_PATH=0 playwright install chromium",
+    "test:browser": "PLAYWRIGHT_BROWSERS_PATH=0 playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

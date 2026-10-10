@@ -1,0 +1,345 @@
+# Site-wide exclusion and content-use restrictions.
+# No automated discovery, crawling, fetching, indexing, image/video/document indexing,
+# scraping, archiving, mirroring, social previews, SEO/research/monitoring collection,
+# datasets, AI input/grounding/RAG/agents, or AI training/fine-tuning is permitted.
+# Content Signals below are an emerging extension, not a standardized access control.
+# All applicable rights are expressly reserved, including under Article 4 of
+# Directive (EU) 2019/790 on copyright and related rights.
+
+# Universal rule — covers all crawlers that honor the standard wildcard group.
+User-agent: *
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+# General search, discovery, image/video/document indexing
+User-agent: Googlebot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Googlebot-Image
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Googlebot-Video
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Googlebot-News
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: GoogleOther
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: GoogleOther-Image
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: GoogleOther-Video
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Bingbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: BingPreview
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: DuckDuckBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Slurp
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Baiduspider
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Yandex
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: YandexImages
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Sogou
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: PetalBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Applebot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: MojeekBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Exabot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Qwantify
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: SeznamBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: AdsBot-Google
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Storebot-Google
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+# AI training, datasets, assistants, search, RAG and user-triggered retrieval
+User-agent: Amazonbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Applebot-Extended
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Bytespider
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: CCBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: ClaudeBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Claude-SearchBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Claude-User
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Google-Extended
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Google-CloudVertexBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: GPTBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: OAI-SearchBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: ChatGPT-User
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: OAI-AdsBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: meta-externalagent
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: meta-externalfetcher
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: PerplexityBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Perplexity-User
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: YouBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: cohere-ai
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Diffbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: omgilibot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: ImagesiftBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: AI2Bot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: AI2Bot-Dolma
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Timpibot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: DuckAssistBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+# Web archives, mirrors and automated collectors
+User-agent: ia_archiver
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: archive.org_bot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: ArchiveBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Heritrix
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: HTTrack
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Wget
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: curl
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+# Social and messaging link previews
+User-agent: facebookexternalhit
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Facebot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Twitterbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: LinkedInBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Slackbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Discordbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: TelegramBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Pinterestbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: WhatsApp
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: SkypeUriPreview
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Embedly
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: redditbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+# SEO, audits, research, monitoring and commercial scraping
+User-agent: AhrefsBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: AhrefsSiteAudit
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: SemrushBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: SemrushBot-SA
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: MJ12bot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: DotBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: BLEXBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: DataForSeoBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: serpstatbot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: SeekportBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: MauiBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: Siteimprove
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: ZoominfoBot
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
+
+User-agent: NetcraftSurveyAgent
+Content-Signal: search=no, ai-input=no, ai-train=no
+Disallow: /
